@@ -1,7 +1,8 @@
 # scrollToTop_by_ALIENPLANET
-Add scroll-to-top button to your page
+Add modern styled scroll-to-top button to your page
 
-jQuery library need to be conected on the page;
+jQuery library need to be connected on the page;
+http://jquery.com/
 
 STEP 1:
 Add script somewhere on your page;
