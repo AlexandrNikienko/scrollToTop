@@ -9,6 +9,7 @@
     border: 15px solid transparent;
     border-top: none;
     border-bottom: 40px solid #111;
+    -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: bottom;
 }
