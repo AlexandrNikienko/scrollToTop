@@ -1,6 +1,7 @@
 /**
- * Created by Alexandr Nikienko on 11/21/2016.
+ * Created by Alexandr Nikienko
  */
+
 $(function () {
     scrollToTop();
 });
@@ -17,9 +18,7 @@ function scrollToTop() {
                         $(this).animate({
                             "bottom": "100%",
                             "opacity": "0"
-                        }, 500, "easeInOutQuart");
-                        /*for timing function "easeInOutQuart" you need jQueryUI.
-                         in other case just don't set this parameter*/
+                        }, 500, ifJQueryUILoaded("easeInOutQuart"));
                         $("body").animate({
                             scrollTop: 0
                         }, 500);
@@ -31,4 +30,12 @@ function scrollToTop() {
             });
         }
     });
+}
+
+function ifJQueryUILoaded(param) {
+    if (jQuery.ui) {
+        return param
+    } else {
+        return false
+    }
 }
