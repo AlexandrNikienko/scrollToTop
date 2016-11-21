@@ -34,6 +34,6 @@ var scrollToTop = {
         });
     },
     ifJQueryUILoaded: function(param) {
-        jQuery.ui ? param : false
+        return jQuery.ui ? param : false
     }
 }
