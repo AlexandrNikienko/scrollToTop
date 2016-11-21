@@ -1,0 +1,26 @@
+.scroll-to-top-btn {
+    position: fixed;
+    right: 15px;
+    bottom: 80px;
+    cursor: pointer;
+    display: none;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top: none;
+    border-bottom: 40px solid #111;
+    transform: translateZ(0);
+    will-change: bottom;
+}
+
+.scroll-to-top-btn:after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: -15px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom: none;
+    border-top: 10px solid #111;
+}
