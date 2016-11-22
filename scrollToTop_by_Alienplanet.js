@@ -9,7 +9,7 @@ $(function () {
 var scrollToTop = {
     init: function() {
         var that = this;
-        $(document).scroll(function () {
+        $(document).scroll(function() {
             if ($(this).scrollTop() > 100) {
                 var scrollVal = $(this).scrollTop();
                 if (!$(".scroll-to-top-btn ").length) {
